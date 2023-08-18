@@ -5,12 +5,12 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
 
+
 type Props = {
-  pageInfo: PageInfo;
 };
 
 
-function Hero({ pageInfo }: Props) {
+function Hero({ }: Props) {
   const [text, count] = useTypewriter({
     words: ["Rati Ziraqashvili", "Developer"],
     loop: true,
@@ -21,12 +21,12 @@ function Hero({ pageInfo }: Props) {
       <BackgroundCircles />
       <img
         className=" relative rounded-full h-32 w-32 mx-auto object-cover "
-        src={urlFor(pageInfo?.heroImage).url()}
+        src="https://i.imgur.com/iYpSLse.png"
         alt=""
       />
       <div className='z-20'>
         <h2 className=" animate-pulse text-small uppercase text-gray-500 pb-2 tracking-[15px]">
-          {pageInfo.role}
+        SOFTWARE ENGINEER
         </h2>
 
         <h1 className="text-4xl lg:text-5xl font-semibold px-10">
