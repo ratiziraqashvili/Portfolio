@@ -3,7 +3,7 @@ import { PageInfo } from "../typings"
 
 export const fetchPageInfo = async () => {
     const res = await fetch(
-        "/api/getPageInfo"
+        "https://portfolio-ucog.vercel.app/api/getExperience/api/getPageInfo"
         );
 
     const data = await res.json();
