@@ -51,6 +51,9 @@ function Projects({projects}: Props) {
                 <img className="h-10 w-10" key={technology._id} src={urlFor(technology.image).url()} alt="" />
               ))}
               </div>
+              <div className="flex items-center justify-center m-0">
+                <a href={project?.linkToBuild}>See Website</a>
+              </div>
 
               <p className="text-md text-center md:text-left">
                 {project?.summary}
