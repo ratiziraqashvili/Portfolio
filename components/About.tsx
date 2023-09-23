@@ -9,7 +9,7 @@ type Props = {
 };
 
 function About({}: Props) {
-  const backgroundInfo = "Hello there! I'm a front-end developer who enjoys making websites look cool and work smoothly. I know HTML, CSS, and JavaScript, and I'm good at making things with React.js. I can also do some stuff with Tailwind CSS to make things pretty, and I can add fun animations with Framer Motion.  I've used Material-UI and Firebase to make websites do more things, and I've even tried out Next.js to make sites load faster. I've also played around with Sanity to make websites that are easy to update.  I like turning ideas into websites that people can use and enjoy. I'm always excited to learn new things and make websites that look good and work well. Let's create some awesome web experiences together!"
+  const backgroundInfo = "Profile Aspiring front-end developer with 1+ years of experience building responsive web applications using React, Redux, and other modern frameworks. Skilled in translating UI/UX designs into robust frontend architectures. Seeking a junior developer role to utilize skills in coding custom web interfaces and enhancing user experience."
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -17,7 +17,7 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="flex flex-col text-center md:text-left md:flex-row relative h-screen max-w-7xl px-10 justify-evenly mx-auto items-center mt-20 md:mt-0"
     >
-      <h3 className=" animate-pulse top-[-60px] absolute md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" animate-pulse top-[-60px] absolute md:top-24 uppercase  tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
 
@@ -37,10 +37,10 @@ function About({}: Props) {
           once: true,
         }}
         src="https://i.imgur.com/aWdOWUJ.png"
-        className="mb-0 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover mb:rounded-lg md:w-34 md:h-95 xl:w-[300px] xl:h-[300px] mt-30"
+        className="mb-0 md:mb-0 mt-44 sm:mt-0 flex-shrink-0 w-56 h-56 rounded-full object-cover mb:rounded-lg md:w-34 md:h-95 xl:w-[300px] xl:h-[300px] mt-30"
       />
 
-      <div className="space-y-10  p-0 md:px-10">
+      <div className="space-y-10  p-0 md:px-10 pb-20">
         <h4 className="text-4xl font-semibold ml-3">
           Here is a{" "}
           <span className="underline decoration-[#f7ab0a]/50">little</span>{" "}

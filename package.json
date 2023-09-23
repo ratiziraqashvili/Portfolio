@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.11.0",
     "@heroicons/react": "^2.0.18",
     "@portabletext/react": "^3.0.4",
+    "@react-hook/media-query": "^1.1.1",
     "@sanity/client": "^6.4.6",
     "@sanity/image-url": "^1.0.2",
     "@types/node": "20.4.10",

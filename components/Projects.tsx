@@ -2,12 +2,14 @@ import React from "react";
 import { motion } from 'framer-motion';
 import { Project } from "@/typings";
 import { urlFor } from "@/sanity";
+import { useMediaQuery } from "@react-hook/media-query";
 
 type Props = {
   projects: Project[];
 };
 
 function Projects({projects}: Props) {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
   return (
     <motion.div
       initial={{
@@ -15,18 +17,18 @@ function Projects({projects}: Props) {
       }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-[1000px] relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className=" animate-pulse top-[-60px] absolute md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className=" animate-pulse top-[-60px] absolute md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl mt-40">
         Projects
       </h3>
 
-      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-proximity z-20">
+      <div className="scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-proximity z-20 pt-40 ">
         {projects?.map((project, i) => (
           <div key={project._id} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
             <motion.img
               initial={{
-                y: -300,
+                y: isSmallScreen ? 0 : -300,
                 opacity: 0,
               }}
               transition={{ duration: 1 }}

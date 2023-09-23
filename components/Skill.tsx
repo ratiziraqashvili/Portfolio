@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Skill } from "@/typings";
 import { urlFor } from "@/sanity";
+import { useMediaQuery } from "@react-hook/media-query";
 
 type Props = {
   directionLeft?: boolean;
@@ -9,11 +10,12 @@ type Props = {
 };
 
 function Skill({ skill, directionLeft }: Props) {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
   return (
     <div className="group relative flex cursor-pointer top-20">
       <motion.img
         initial={{
-          x: directionLeft ? -200 : 200,
+          x: isSmallScreen ? 0 : directionLeft ? -200 : 200,
         }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}

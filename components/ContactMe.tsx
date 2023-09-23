@@ -66,9 +66,9 @@ function ContactMe() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col space-y-2 w-fit mx-auto"
+          className="flex flex-col space-y-2 mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col gap-2 sm:flex-row">
             <input
               required
               placeholder="Name"
