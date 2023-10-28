@@ -28,6 +28,7 @@ const Home = ({ experiences, skills, projects, socials }: Props) => {
     <div className='bg-[rgba(36,36,36)] text-white h-screen snap-y snap-proximity overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 pb-56'>
       <Head>
         <title>Rati Ziraqashvili - Portfolio</title>
+        <link rel="icon" href="/mainlogorz.png" /> 
       </Head>
 
       <Header socials={socials} />
