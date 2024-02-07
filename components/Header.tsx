@@ -27,11 +27,11 @@ export default function Header({ socials }: Props) {
         className="flex flex-row items-center"
       >
         {socials.map((social) => (
-          <SocialIcon 
-          key={social._id}
-          url={social.url}
-          fgColor="gray"
-          bgColor="transparent"
+          <SocialIcon
+            key={social._id}
+            url={social.url}
+            fgColor="gray"
+            bgColor="transparent"
           />
         ))}
       </motion.div>
@@ -52,9 +52,11 @@ export default function Header({ socials }: Props) {
         className="flex flex-row items-center text-gray-300 cursor-pointer"
       >
         <SocialIcon network="email" fgColor="gray" bgColor="transparent" />
-        <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
-          Get In Touch
-        </p>
+        <a href="#contact">
+          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+            Get In Touch
+          </p>
+        </a>
       </motion.div>
     </header>
   );
