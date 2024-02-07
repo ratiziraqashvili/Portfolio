@@ -38,7 +38,7 @@ const Home = ({ experiences, skills, projects, socials }: Props) => {
         </section>
 
         <section id='about' className='snap-center'>
-          <About  />
+          <About />
         </section>
 
         <section id='experience' className='snap-center'>

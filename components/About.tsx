@@ -1,15 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { PageInfo } from "@/typings";
-import { url } from "inspector";
-import { urlFor } from "@/sanity";
-
 
 type Props = {
 };
 
 function About({}: Props) {
-  const backgroundInfo = "Profile Aspiring front-end developer with 1+ years of experience building responsive web applications using React, Redux, and other modern frameworks. Skilled in translating UI/UX designs into robust frontend architectures. Seeking a junior developer role to utilize skills in coding custom web interfaces and enhancing user experience."
+  const backgroundInfo = "I am full-stack web developer with expertise in JavaScript, TypeScript, and modern web development frameworks like React, Next.js, Node.js, and Express with professional experience developing responsive and accessible web interfaces for McDonald's Georgia using React, Next.js, TailwindCSS and following best practices for web development."
   return (
     <motion.div
       initial={{ opacity: 0 }}
