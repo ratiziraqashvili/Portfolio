@@ -54,7 +54,7 @@ function Projects({projects}: Props) {
               ))}
               </div>
               <div className="flex items-center justify-center m-0">
-                <a href={project?.linkToBuild}>See Website</a>
+                <a href={project?.linkToBuild} target="_blank">See Website</a>
               </div>
 
               <p className="text-md text-center md:text-left">
