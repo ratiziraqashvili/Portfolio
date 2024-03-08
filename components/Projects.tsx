@@ -57,7 +57,7 @@ function Projects({projects}: Props) {
                 <a href={project?.linkToBuild} target="_blank">See Website</a>
               </div>
 
-              <p className="text-md text-center md:text-left">
+              <p className="text-md text-center">
                 {project?.summary}
               </p>
             </div>
